@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Checkout Page Challenge</title>
+
+    <script>
+      function validateForm() {
+        alert("Form submitted successfully");
+        return false;
+      }
+    </script>
   </head>
   <body>
     <div class="conatiner">
@@ -61,10 +68,14 @@
         <div class="user__info">
           <h3>Contact infomation</h3>
 
-          <form>
+          <form
+            action="/index.html"
+            onsubmit="return validateForm()"
+            method="post"
+          >
             <label>E-mail</label>
             <div class="user__info__input">
-              <input type="email" placeholder="Enter your email..." required/>
+              <input type="email" placeholder="Enter your email..." required />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -81,7 +92,7 @@
 
             <label>Phone</label>
             <div class="user__info__input">
-              <input type="number" placeholder="Enter your phone..." required/>
+              <input type="number" placeholder="Enter your phone..." required />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -100,7 +111,7 @@
 
             <label>Full name</label>
             <div class="user__info__input">
-              <input type="text" placeholder="Enter your name..." required/>
+              <input type="text" placeholder="Enter your name..." required />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 enable-background="new 0 0 24 24"
@@ -120,7 +131,7 @@
 
             <label>Address</label>
             <div class="user__info__input">
-              <input type="text" placeholder="Enter your address..." required/>
+              <input type="text" placeholder="Enter your address..." required />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -135,7 +146,7 @@
 
             <label>City</label>
             <div class="user__info__input">
-              <input type="text" placeholder="Enter your city..." required/>
+              <input type="text" placeholder="Enter your city..." required />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -154,8 +165,12 @@
               <div>
                 <label>Country</label>
                 <div class="user__info__input">
-
-                  <select id="Country" name="Country" required placeholder="Enter your Country...">
+                  <select
+                    id="Country"
+                    name="Country"
+                    required
+                    placeholder="Enter your Country..."
+                  >
                     <option value="iran">Iran</option>
                     <option value="Japan">Japan</option>
                     <option value="Spain">Spain</option>
@@ -179,7 +194,11 @@
               <div>
                 <label>Postal code</label>
                 <div class="user__info__input">
-                  <input type="number" placeholder="Enter your Postal code..." required/>
+                  <input
+                    type="number"
+                    placeholder="Enter your Postal code..."
+                    required
+                  />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"

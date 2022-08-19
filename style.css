@@ -34,6 +34,7 @@ h1 {
   font-size: 24px;
   line-height: 29px;
   margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 .cart {
@@ -112,10 +113,11 @@ h1 {
 }
 
 .user__info h3 {
-  margin-top: 3rem;
+  margin: 2rem 0 1rem 0;
 }
 
-.user__info__input input, .user__info__input select{
+.user__info__input input,
+.user__info__input select {
   width: 100%;
   border: 1px solid #828282;
   border-radius: 12px;
@@ -208,10 +210,6 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     gap: 5%;
-  }
-
-  .user__info h3 {
-    margin-top: 0;
   }
 
   .user__info {
