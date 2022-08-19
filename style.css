@@ -2,6 +2,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -12,6 +13,10 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #333333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -22,6 +27,7 @@ img {
   width: 95%;
   max-width: 80rem;
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
 h1 {
@@ -50,6 +56,7 @@ h1 {
   margin-bottom: 2rem;
   align-items: flex-start;
   position: relative;
+
 }
 
 .cart__item:nth-of-type(2) {
@@ -109,9 +116,8 @@ h1 {
   margin-top: 3rem;
 }
 
-form input {
-  display: block;
-  width: 80%;
+.user__info__input input {
+  width: 100%;
   border: 1px solid #828282;
   border-radius: 12px;
   padding: 1.2rem;
@@ -122,38 +128,82 @@ form input {
   font-weight: 600;
 }
 
-form input:focus-visible {
+.user__info__input input:focus-visible {
   outline-offset: 0px;
   outline: 1px solid black;
 }
 
-form input::placeholder {
+.user__info__input input::placeholder {
   color: #828282;
   opacity: 1;
 }
 
-.user__info__input{
-    position: relative;
+.user__info__input {
+  position: relative;
+  display: flex;
 }
 
-.user__info__input svg{
-    position: absolute;
-    left: 1rem;
-    top: 0.8rem;
-    fill: #828282;
+.user__info__input svg {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  fill: #828282;
 }
 
 form label {
-  margin-bottom: 0.6rem;
   font-size: 10px;
-  line-height: 12px;
+}
+
+.btn__container {
+  text-align: end;
+}
+
+.btn__container button {
+  text-align: end;
+  background: #f2994a;
+  border-radius: 12px;
+  padding: 1.7rem 4.5rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.user__info__agree label {
+  vertical-align: text-bottom;
+}
+
+.user__info__input__inline {
+  display: flex;
+  gap: 2rem;
+}
+
+.user__info__input__inline div {
+  width: 100%;
+}
+
+a{
+    color: inherit;
+}
+
+footer {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #bdbdbd;
 }
 
 @media (min-width: 600px) {
   .container__inner {
     display: flex;
     flex-direction: row-reverse;
-    gap: 1rem;
+    gap: 5%;
   }
 
   .user__info h3 {
