@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+}
+
+.conatiner {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 3rem;
+}
+
+.cart {
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 3rem;
+}
+
+.cart__checkout {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-top: 1px solid #bdbdbd;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.cart__item:nth-of-type(2){
+    margin-bottom: 7rem;
+}
+
+.cart__item img {
+  width: 30%;
+  border-radius: 1.2rem;
+}
+
+.cart__item-info {
+  width: 67%;
+}
+
+.cart__item-info h4 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.cart__item-info p {
+  margin: 0;
+  color: #f2994a;
+}
+
+.cart__item-info p span {
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: line-through;
+  color: #333333;
+  margin-left: 0.5rem;
+}
+
+.cart__item-quantity {
+  display: flex;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 1rem 3rem;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+}
+
+.cart__item-quantity div {
+  background: #e0e0e0;
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
